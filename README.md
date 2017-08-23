@@ -13,6 +13,34 @@ VIRTUAL ENVIRONMENT
 * On Mac `pip install virtualenv`
 * To create virtual environment `virtualenv venv`
 * To activate
-`source venv/bin/activate`  
+`source venv/bin/activate`
 
+Installing Flask  
+----------------
+
+Flask can be installed with pip package manager
+* `pip install flask`
+
+Creating basic Hello World
+--------------------------
+* create an app.py
+* import flask
+```
+from flask import Flask
+app = Flask(__name__)
+```
+* define route for / to return hello world
+```
+@app.route("/")
+def main():
+    return "Hello World!"
+```
+* add main program to run the app
+```
+if __name__ == "__main__":
+    app.run()
+```
+
+* run the app
+`python app.py`
 
