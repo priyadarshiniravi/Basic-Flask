@@ -44,3 +44,13 @@ if __name__ == "__main__":
 * run the app
 `python app.py`
 
+Rendering html file
+-------------------
+* import render_template
+```
+from flask import Flask, render_template
+```
+* to render html use function  
+`render_template('login.html')`    
+add the login html file to the templates package as flask looks for template files inside the templates folder
+
